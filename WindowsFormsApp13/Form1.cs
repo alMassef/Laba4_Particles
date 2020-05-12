@@ -40,63 +40,6 @@ namespace WindowsFormsApp13
             {
                 emiter.UpdateState();
             }
-
-            //foreach (var particle in particles)
-            //{
-            //    particle.Life -= 1; // уменшаю здоровье
-            //                        // если здоровье кончилось
-            //    if (particle.Life < 0)
-            //    {
-            //        // восстанавливаю здоровье
-            //        particle.Life = 20 + Particle.rand.Next(100);
-            //        particle.Speed = 1 + Particle.rand.Next(10);
-
-            //        // генерировать вдоль верхней границы изображения
-            //        particle.X = Particle.rand.Next(picDisplay.Image.Width);
-            //        particle.Y = 0;
-
-            //        // добавил направление движения -90 градусов +-15
-            //        particle.Direction = -90 + 15 - Particle.rand.Next(30);
-            //        particle.Radius = 2 + Particle.rand.Next(10);
-            //    }
-            //    else
-            //    {
-            //        // а это наш старый код
-            //        var directionInRadians = particle.Direction / 180 * Math.PI;
-            //        particle.X += (float)(particle.Speed * Math.Cos(directionInRadians));
-            //        particle.Y -= (float)(particle.Speed * Math.Sin(directionInRadians));
-            //    }
-            //}
-
-            //// добавил генерацию частиц
-            //// генерирую не более 10 штук за тик
-            //for (var i = 0; i < 10; ++i)
-            //{
-            //    if (particles.Count < 500) // пока частиц менье 500 генерируем новые
-            //    {
-            //        // снег белый, поэтому придется использовать ParticleColorful
-            //        var particle = ParticleColorful.Generate();
-
-
-            //        // цвет от белого
-            //        particle.FromColor = Color.White;
-            //        // до белого прозрачного
-            //        particle.ToColor = Color.FromArgb(0, Color.White);
-
-
-            //        // координата X вдоль всей верхней границы может оказаться
-            //        particle.X = Particle.rand.Next(picDisplay.Image.Width);
-            //        particle.Y = 0;
-            //        // направление движения чтобы вниз
-            //        particle.Direction = -90 + 15 - Particle.rand.Next(30);
-
-            //        particles.Add(particle);
-            //    }
-            //    else
-            //    {
-            //        break; // а если частиц уже 500 штук, то ничего не генерирую
-            //    }
-            //}
         }
 
         // функция рендеринга
@@ -106,12 +49,6 @@ namespace WindowsFormsApp13
             {
                 emiter.Render(g);
             }
-
-            // утащили сюда отрисовку частиц
-            //foreach (var particle in particles)
-            //{
-            //    particle.Draw(g);
-            //}
         }
 
         private void timer1_Tick(object sender, EventArgs e)
