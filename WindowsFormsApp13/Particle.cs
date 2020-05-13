@@ -223,7 +223,7 @@ namespace WindowsFormsApp13
         public override Particle CreateParticle()
         {
             var particle = ParticleImage.Generate();
-            particle.image = Properties.Resources.particle;
+            particle.image = Properties.Resources.snow;
 
             particle.FromColor = Color.White;
             particle.ToColor = Color.FromArgb(0, Color.White);
@@ -265,7 +265,7 @@ namespace WindowsFormsApp13
         public override Particle CreateParticle()
         {
             var particle = ParticleImage.Generate();
-            particle.image = Properties.Resources.particle;
+            particle.image = Properties.Resources.snow;
 
             particle.FromColor = this.FromColor;
             particle.ToColor = Color.FromArgb(0, this.ToColor);

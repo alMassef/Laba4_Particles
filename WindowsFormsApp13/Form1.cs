@@ -31,7 +31,7 @@ namespace WindowsFormsApp13
                     Radius = 2 + rnd.Next(5),
                     Direction = -90 + rnd.Next(10),
                     Spread = 10,
-                    //Life = 20 + rnd.Next(100)
+                    Life = 20 + rnd.Next(100)
                 });
             }
         }
