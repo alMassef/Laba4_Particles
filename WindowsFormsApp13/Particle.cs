@@ -222,7 +222,9 @@ namespace WindowsFormsApp13
 
         public override Particle CreateParticle()
         {
-            var particle = ParticleColorful.Generate();
+            var particle = ParticleImage.Generate();
+            particle.image = Properties.Resources.particle;
+
             particle.FromColor = Color.White;
             particle.ToColor = Color.FromArgb(0, Color.White);
             particle.X = Position.X;
@@ -262,7 +264,9 @@ namespace WindowsFormsApp13
 
         public override Particle CreateParticle()
         {
-            var particle = ParticleColorful.Generate();
+            var particle = ParticleImage.Generate();
+            particle.image = Properties.Resources.particle;
+
             particle.FromColor = this.FromColor;
             particle.ToColor = Color.FromArgb(0, this.ToColor);
             particle.Direction = this.Direction + Particle.rand.Next(-Spread / 2, Spread / 2);
