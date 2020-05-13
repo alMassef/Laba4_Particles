@@ -29,9 +29,6 @@ namespace WindowsFormsApp13
                     ParticlesCount = 50,
                     Position = new Point(rnd.Next(picDisplay.Width), -20),
                     Radius = 2 + rnd.Next(5),
-                    Direction = -90 + rnd.Next(10),
-                    Spread = 10,
-                    Life = 20 + rnd.Next(100)
                 });
             }
         }

@@ -64,23 +64,25 @@
             // tbDirection
             // 
             this.tbDirection.Location = new System.Drawing.Point(12, 12);
-            this.tbDirection.Maximum = -75;
-            this.tbDirection.Minimum = -105;
+            this.tbDirection.Maximum = -70;
+            this.tbDirection.Minimum = -90;
             this.tbDirection.Name = "tbDirection";
             this.tbDirection.Size = new System.Drawing.Size(113, 45);
             this.tbDirection.TabIndex = 1;
-            this.tbDirection.TickFrequency = 10;
-            this.tbDirection.Value = -75;
+            this.tbDirection.TickFrequency = 5;
+            this.tbDirection.Value = -90;
             this.tbDirection.Scroll += new System.EventHandler(this.tbDirection_Scroll);
             // 
             // tbSpread
             // 
             this.tbSpread.Location = new System.Drawing.Point(131, 12);
             this.tbSpread.Maximum = 30;
+            this.tbSpread.Minimum = 10;
             this.tbSpread.Name = "tbSpread";
             this.tbSpread.Size = new System.Drawing.Size(107, 45);
             this.tbSpread.TabIndex = 2;
             this.tbSpread.TickFrequency = 5;
+            this.tbSpread.Value = 10;
             this.tbSpread.Scroll += new System.EventHandler(this.tbSpread_Scroll);
             // 
             // label1
@@ -113,7 +115,7 @@
             // tdLife
             // 
             this.tdLife.Location = new System.Drawing.Point(358, 12);
-            this.tdLife.Maximum = 50;
+            this.tdLife.Maximum = 100;
             this.tdLife.Name = "tdLife";
             this.tdLife.Size = new System.Drawing.Size(116, 45);
             this.tdLife.TabIndex = 6;
@@ -142,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(981, 533);
+            this.ClientSize = new System.Drawing.Size(827, 512);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tdLife);

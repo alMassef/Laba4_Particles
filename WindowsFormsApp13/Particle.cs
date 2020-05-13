@@ -281,7 +281,7 @@ namespace WindowsFormsApp13
 
         public override void ResetParticle(Particle particle)
         {
-            var particleColorful = particle as ParticleColorful;
+            var particleColorful = particle as ParticleImage;
             if (particleColorful != null)
             {
                 particleColorful.Life = this.Life + Particle.rand.Next(100);
